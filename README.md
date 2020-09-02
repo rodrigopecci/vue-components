@@ -1,85 +1,32 @@
-# rodrigopecci/vue-components
+# rodrigopecci/vue-component-test
+
+**Component for testing**
+
+## Installation
+
+```
+npm install rodrigopecci/vue-component-test
+```
 
 ## Usage
 
-Within node environment
-```sh
-$ npm install --save rodrigopecci/vue-components
-```
+### Bundler (Webpack, Rollup)
 
 ```js
-<script>
-import { SampleComponent, AnotherSampleComponent } from "rodrigopecci/vue-components"
+import Vue from 'vue'
+import VueComponentTest from 'rodrigopecci/vue-component-test'
 
-export default {
-    components: {
-        SampleComponent,
-        AnotherSampleComponent
-    }    
-}
-</script>
-
-<template>
-    <div>
-        <SampleComponent />
-        <AnotherSampleComponent />
-    </div>
-</template>
+Vue.use(VueComponentTest)
 ```
 
-or on existing non vue project
+### Browser
 
 ```html
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/rodrigopecci/vue-components"></script>
-<div id="app">
-    <vue-components-sample-component />
-    <vue-components-another-sample-component />
-</div>
+<!-- Include after Vue -->
+<!-- Local files -->
+<script src="rodrigopecci/vue-component-test/dist/vue-component-test.js"></script>
+
+<!-- From CDN -->
+<script src="https://unpkg.com/rodrigopecci/vue-component-test"></script>
 ```
 
-## Building Components
-
-Make sure first that vue cli and vue cli-service-global was installed globally.
-They will be use on building packages and service components
-```sh
-npm install -g @vue/cli @vue/cli-service-global
-```
-
-To build for lib and web components
-```sh
-npm run build
-```
-
-To only build lib components
-```sh
-npm run build:lib
-```
-
-To only build web components
-```sh
-npm run build:wc
-```
-
-## Working on Components
-
-When working on the components, there are too ways to vuew the output: 
-- via script tag -> wc
-- via serving the vue component -> lib
-
-
-### Web Components
-
-- Before the changes are reflected, make sure to build your changes.
-```sh
-npm run build:wc
-```
-- Load demo html in `./dist/demo.html` to your browser
-
-### Lib Components
-
-- Serve vue component
-```sh
-vue serve src/components/SampleComponent.vue
-```
-- See component in action on http://localhost:8080
