@@ -1,4 +1,4 @@
-'use strict';Object.defineProperty(exports,'__esModule',{value:true});//
+'use strict';//
 //
 //
 //
@@ -168,6 +168,9 @@ var __vue_staticRenderFns__$1 = [];
     undefined,
     undefined
   );// Import vue component
+
+// exports.VueComponentTest = VueComponentTest;
+// exports.VueComponentAnotherTest = VueComponentAnotherTest;
 
 // Export component by default
 var index = {
