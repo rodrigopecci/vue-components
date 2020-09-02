@@ -1,12 +1,13 @@
 <template>
-   <button>{{label}}</button>
+  <button>{{label}}</button>
 </template>
 <script>
 export default {
-   data() {
-      return {
-        label: 'Another Sample Component'
-      }
-   }
-}
+  name: "AnotherSampleComponent",
+  data() {
+    return {
+      label: "Another Sample Component",
+    };
+  },
+};
 </script>
