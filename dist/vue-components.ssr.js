@@ -169,11 +169,11 @@ var __vue_staticRenderFns__$1 = [];
     undefined
   );// Import vue component
 
-// exports.VueComponentTest = VueComponentTest;
-// exports.VueComponentAnotherTest = VueComponentAnotherTest;
+exports.VueComponentTest = __vue_component__;
+exports.VueComponentAnotherTest = __vue_component__$1;
 
 // Export component by default
-var index = {
-  VueComponentTest: __vue_component__,
-  VueComponentAnotherTest: __vue_component__$1,
-};exports.default=index;//# sourceMappingURL=vue-components.ssr.js.map
+/* export default {
+  VueComponentTest,
+  VueComponentAnotherTest,
+}; *///# sourceMappingURL=vue-components.ssr.js.map
