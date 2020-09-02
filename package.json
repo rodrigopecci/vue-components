@@ -6,6 +6,7 @@
   "unpkg": "dist/vue-components.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "prebuild": "rm -rf dist/",
     "build": "npm run build:wc & npm run build:lib",
     "lint": "vue-cli-service lint",
     "build:lib": "vue-cli-service build --target lib --name vue-components 'src/main.js'",
