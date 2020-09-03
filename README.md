@@ -1,11 +1,11 @@
-# rodrigopecci/vue-component-test
+# rodrigopecci/vue-components
 
 **Component for testing**
 
 ## Installation
 
 ```
-npm install rodrigopecci/vue-component-test
+npm install rodrigopecci/vue-components
 ```
 
 ## Usage
@@ -13,10 +13,23 @@ npm install rodrigopecci/vue-component-test
 ### Bundler (Webpack, Rollup)
 
 ```js
-import Vue from 'vue'
-import VueComponentTest from 'rodrigopecci/vue-component-test'
+<script>
+import { VueComponentTest, VueComponentAnotherTest } from "vue-components";
 
-Vue.use(VueComponentTest)
+export default {
+    components: {
+        VueComponentTest,
+        VueComponentAnotherTest
+    }    
+}
+</script>
+
+<template>
+    <div>
+      <VueComponentTest param="param value" />
+      <VueComponentAnotherTest param="param value" />
+    </div>
+</template>
 ```
 
 ### Browser
@@ -24,9 +37,9 @@ Vue.use(VueComponentTest)
 ```html
 <!-- Include after Vue -->
 <!-- Local files -->
-<script src="rodrigopecci/vue-component-test/dist/vue-component-test.js"></script>
+<script src="rodrigopecci/vue-component-test/dist/vue-components.js"></script>
 
 <!-- From CDN -->
-<script src="https://unpkg.com/rodrigopecci/vue-component-test"></script>
+<script src="https://unpkg.com/rodrigopecci/vue-components"></script>
 ```
 
