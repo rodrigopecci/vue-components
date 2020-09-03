@@ -76,7 +76,6 @@ if (!argv.format || argv.format === 'cjs') {
       format: 'cjs',
       exports: 'named',
       sourcemap: true,
-      esModule: false,
     },
     plugins: [
       ...baseConfig.plugins.preVue,
@@ -107,7 +106,6 @@ if (!argv.format || argv.format === 'iife') {
       format: 'iife',
       exports: 'named',
       sourcemap: true,
-      esModule: false,
     },
     plugins: [
       ...baseConfig.plugins.preVue,
